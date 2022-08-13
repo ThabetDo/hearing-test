@@ -1,0 +1,100 @@
+<!--
+* * * * * * * * * * * * * * * *
+* * * Created by : Thabet El Debuch
+* * * Facebook : https://www.facebook.com/soene.doeb
+* * * * * * * * * * * * * * * *
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hearing Test</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/loading.css">
+    <link rel="icon" href="../img/icon.png">
+</head>
+<body onload="showPage()" class="m-0">
+<!--loading-->
+<div id="loader"></div>
+<!-- main title -->
+<header class="badge-secondary"><h1 class="display-4">Hearing Test</h1></header>
+<!-- body -->
+<div id="myDiv" class="animate-bottom main-menu p-3 my-5 mx-auto bg-secondary rounded">
+    <!--stage progress of test-->
+    <div id="stages" class="stages p-2 m-1 mb-3 bg-info rounded" style="font-weight: bold;">
+        <span class="text-light">Stages :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span id='stage1' class="rounded-circle btn-primary py-1 px-2">1</span>&nbsp;&nbsp;
+        <span id='stage2' style="display: none;" class="rounded-circle btn-primary py-1 px-2">2</span>&nbsp;&nbsp;
+        <span id='stage3' style="display: none;" class="rounded-circle btn-primary py-1 px-2">3</span>&nbsp;&nbsp;
+        <span id='stage4' style="display: none;" class="rounded-circle btn-primary py-1 px-2">4</span>&nbsp;&nbsp;
+        <span id='stage5' style="display: none;" class="rounded-circle btn-primary py-1 px-2">5</span>&nbsp;&nbsp;
+        <span id='stage6' style="display: none;" class="rounded-circle btn-primary py-1 px-2">6</span>&nbsp;&nbsp;
+        <span><button onclick="nextAudio()" class="btn-sm btn-warning rounded">Don't hear</button></span>
+    </div>
+    <!--audio files-->
+    <div class="audio px-5" >
+        <div id="aud1">
+            <span>19000Hz</span>
+            <audio controls><source src="../audio/audio1.wav">
+            Your browser does not support the audio element change your browser.
+            </audio>
+        </div>
+        <div id="aud2" class="d-none">
+            <span>17000Hz</span>
+            <audio controls><source src="../audio/audio2.wav">
+            Your browser does not support the audio element change your browser.
+            </audio>
+        </div>
+        <div id="aud3" class="d-none">
+            <span>16000Hz</span>
+            <audio controls><source src="../audio/audio3.wav">
+            Your browser does not support the audio element change your browser.
+            </audio>
+        </div>
+        <div id="aud4" class="d-none">
+            <span>15000Hz</span>
+            <audio controls><source src="../audio/audio4.wav">
+            Your browser does not support the audio element change your browser.
+            </audio>
+        </div>
+        <div id="aud5" class="d-none">
+            <span>12000Hz</span>
+            <audio controls><source src="../audio/audio5.wav">
+            Your browser does not support the audio element change your browser.
+            </audio>
+        </div>
+        <div id="aud6" class="d-none">
+            <span>8000Hz</span>
+            <audio controls><source src="../audio/audio6.wav">
+            Your browser does not support the audio element change your browser.
+            </audio>
+        </div>
+    </div>
+    <a href="../index.html" class="btn btn-outline-info">Back to Main minue</a>
+    <div>
+        <strong> when you hearing :&nbsp;&nbsp;</strong><button onclick="done();" class="btn-sm btn-success ">Press here</button>
+    </div>
+</div>
+<div id="result" class="d-none mx-auto my-5">
+    your age XX year.
+</div>
+<!-- footer -->
+<footer class="fixed-bottom badge-secondary pt-3">
+    <p>
+        Created By:&nbsp;<a href="https://www.facebook.com/soene.doeb" class="d-inline m-0 text-light">Thabet El Debuch</a>&nbsp;.
+    </p>
+</footer>
+<!--js files-->
+<script src="../js/jquery-3.2.1.slim.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+

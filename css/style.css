@@ -1,0 +1,77 @@
+/*
+* * * * * * * * * * * * * * *
+* * * Created by : Thabet El Debuch
+* * * Facebook : https://www.facebook.com/soene.doeb
+* * * * * * * * * * * * * * *
+*/
+h1,footer{
+	text-align: center;
+}
+a{
+	margin: 1.5rem;
+	display: block;
+}
+#myDiv{
+	font-family: Tahoma,sans-serif;
+	max-width: 400px;
+	width: max-content;
+	margin: 40vh auto;
+}
+.main-menu{
+	background-color: rgba(166, 166, 166,.5)!important;
+	box-shadow: #484a4a 0 10px 20px;
+	min-width: 400px;
+	width: max-content;
+}
+header{
+	margin-top: -20px;
+}
+header h1 {
+	padding: 30px;
+}
+/*start HowToUse*/
+#howToUse{
+	font-family: Tahoma,sans-serif;
+	margin: 30px auto;
+	width: 70vw;
+	background: #00000036;
+	font-size: 20px;
+}
+#howToUse .howToUse{
+	display: inline-block;
+	padding: 30px;
+}
+#howToUse .howToUse > strong{
+	font-size: 24px;
+}
+#howToUse .howToUse button{
+	font-size: 20px;
+}
+/*end HowToUse*/
+
+@media (max-height: 600px) {
+	footer{
+		position: relative;
+	}
+}
+
+
+/* Start test.html */
+.audio div,.audio div span{
+	display: block;
+	margin: 10px;
+	font-size: 20px;
+}
+#result {
+	display: block;
+	width: max-content;
+	padding: 3rem;
+	color: white;
+	background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+	border: 1px double #0091ff7a;
+	box-shadow: inset -2px -2px 17px 0px #1223ff42;
+	font-size: 23px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+/*End test.html*/
